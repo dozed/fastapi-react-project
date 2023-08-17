@@ -1,0 +1,11 @@
+
+# IDE
+.idea
+*.iml
+
+# App
+node_modules
+dist
+__pycache__
+backend/test/.hypothesis
+backend/data/alert-results
