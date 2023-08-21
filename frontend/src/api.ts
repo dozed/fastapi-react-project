@@ -1,4 +1,4 @@
-import {Info, InfosResponse} from './data/info';
+import {InfosResponse} from './data/info';
 
 const handleError = (res: Response): void => {
     if (res.status === 404) {
@@ -16,6 +16,7 @@ const doFetch = async (url: string) => {
     return res;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const doPost = async (url: string, jsonData: any) => {
     const res = await fetch(url, {
         method: 'POST',
@@ -30,6 +31,7 @@ const doPost = async (url: string, jsonData: any) => {
     return res;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const doPatch = async (url: string, jsonData: any) => {
     const res = await fetch(url, {
         method: 'PATCH',
@@ -44,6 +46,7 @@ const doPatch = async (url: string, jsonData: any) => {
     return res;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const doDelete = async (url: string) => {
     const res = await fetch(url, {
         method: 'DELETE'
