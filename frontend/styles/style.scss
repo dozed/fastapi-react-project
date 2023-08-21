@@ -4,3 +4,13 @@
 body {
     overflow-y: scroll;
 }
+
+span.info-item {
+
+    cursor: pointer;
+
+    &.active {
+        background-color: aqua;
+    }
+
+}
